@@ -1,0 +1,15 @@
+"*":
+  "autocomplete-plus":
+    confirmCompletion: "tab"
+  core:
+    telemetryConsent: "no"
+    themes: [
+      "native-ui"
+      "seti-syntax"
+    ]
+  "linter-ui-default":
+    showPanel: true
+  "native-ui":
+    ui: {}
+  welcome:
+    showOnStartup: false

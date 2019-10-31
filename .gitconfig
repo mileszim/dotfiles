@@ -1,0 +1,20 @@
+[user]
+	name = Miles Zimmerman
+	email = mileszim@protonmail.com
+	signingkey = REPLACE_WITH_KEY
+[commit]
+	gpgsign = true
+[alias]
+  co = checkout
+  br = branch
+  st = status
+
+  # Show verbose output about tags, branches or remotes
+  tags = tag -l
+  branches = branch -a
+  remotes = remote -v
+
+  # Pretty log output
+  lgp = log --graph --pretty=format:'%C(yellow)%h%Creset%C(blue)%d%Creset %C(white bold)%s%Creset %C(white dim)(by %an %ar)%Creset'
+[init]
+	templatedir = ~/.git-scripts/templates

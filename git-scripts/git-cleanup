@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Stash changes, checkout master, remove all local branches, and get latest
+git stash
+git checkout master
+git branch | grep -v master | xargs git branch -d
+git pull
