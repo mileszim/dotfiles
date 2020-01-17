@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Stash changes, checkout master, delete branch you were on
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+git stash
+git checkout master
+git branch -d $CURRENT_BRANCH
+git pull
+
+# Rails
+# [[ -f Gemfile ]] && bundle install && bundle exec rake db:migrate
+
+# Node
+# [[ -f package.json ]] && npm clean-install
