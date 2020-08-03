@@ -7,7 +7,12 @@ GIT_PS1_SHOWDIRTYSTATE=true
 export PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[01;33m\]$(__git_ps1)\[\033[01;34m\] \$\[\033[00m\] '
 
 ## Load .bashrc files
-## Uncomment as needed
+# for file in ~/.bashrc.d/*.bashrc; do
+#   source "$file"
+# done
+#
+## or: Uncomment as needed
+# source ~/.bashrc.d/aws-vault.bashrc
 # source ~/.bashrc.d/go.bashrc
 # source ~/.bashrc.d/nvm.bashrc
 # source ~/.bashrc.d/postgres.bashrc
